@@ -48,6 +48,7 @@ class Players:
         player = self.__current_player
         volume_interval = self.__config.get_interval()
         player.set_relative_volume(volume_interval)
+        print(f"Sonos {player.player_name}: Volume raised to {player.volume}%.")
 
     def volume_down(self):
         """

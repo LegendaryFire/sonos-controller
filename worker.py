@@ -21,7 +21,6 @@ class Worker:
             suppress=False
         )
         self.__notifications.notify_player_changed(self.__player.get_player())
-        print(f"Connected to Sonos {self.__player.get_player().player_name}. Current volume set to {self.__player.get_player().volume}%.")
 
     def __on_press(self, key):
         if key == self.__config.get_combo():
